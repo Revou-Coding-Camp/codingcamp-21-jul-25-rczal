@@ -6,18 +6,6 @@ let sortDirection = {
     date: 'asc'
 };
 
-document.addEventListener('DOMContentLoaded', () => {
-    renderTasks();
-
-    anime({
-        targets: '#todo-title',
-        translateY: [-100, 0],
-        opacity: [0, 1],
-        easing: 'easeOutExpo',
-        duration: 1500,
-    });
-});
-
 
 function toggleFilterPanel() {
     const panel = document.getElementById('filter-panel-content');
