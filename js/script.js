@@ -1,5 +1,3 @@
-import anime from "https://cdn.jsdelivr.net/npm/animejs/+esm"; // Tambahkan baris ini di paling atas
-
 let tasks = [];
 let filteredDate = null;
 let sortMode = 'alpha';
@@ -11,7 +9,6 @@ let sortDirection = {
 document.addEventListener('DOMContentLoaded', () => {
     renderTasks();
 
-    // Animasi judul
     anime({
         targets: '#todo-title',
         translateY: [-100, 0],
